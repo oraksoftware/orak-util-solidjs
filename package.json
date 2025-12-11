@@ -1,0 +1,51 @@
+{
+  "name": "orak-util-solidjs",
+  "version": "0.0.1",
+  "description": "Orak Software Utility Solidjs Components",
+  "type": "module",
+  "main": "dist/orak-util-solidjs.cjs",
+  "module": "dist/orak-util-solidjs.js",
+  "types": "dist/orak-util-solidjs.d.ts",
+  "files": [
+    "dist"
+  ],
+  "fiBuildComment": "Add new class to index.ts",
+  "scripts": {
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsup",
+    "pn-install": "pnpm install",
+    "pn-publish": "pnpm publish --no-git-checks",
+    "pn-buipub": "tsup && pnpm publish --no-git-checks",
+    "pn-link": "pnpm link",
+    "pn-unlink": "pnpm unlink orak-util-solidjs",
+    "list-global": "pnpm list -g"
+  },
+  "keywords": [
+    "typescript",
+    "library"
+  ],
+  "author": "Tuncay Orak",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/engtuncay/orak-util-solidjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/engtuncay/orak-util-solidjs.git/issues"
+  },
+  "homepage": "https://github.com/engtuncay/orak-util-solidjs#readme",
+  "devDependencies": {
+    "terser": "^5.39.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.2.2",
+    "vitest": "^2.1.2"
+  },
+  "dependencies": {
+    
+  },
+  "devDependenciesComment": {
+    "solid-js": "^1.9.5"
+  }
+}
