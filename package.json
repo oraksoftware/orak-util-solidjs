@@ -1,7 +1,7 @@
 {
   "name": "orak-util-solidjs",
   "version": "0.0.1",
-  "description": "Orak Software Utility Solidjs Components",
+  "description": "Oraksoft Solidjs Components",
   "type": "module",
   "main": "dist/orak-util-solidjs.cjs",
   "module": "dist/orak-util-solidjs.js",
