@@ -13,6 +13,9 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ["solid-js"],
+      output: {
+        assetFileNames: "[name].[ext]",
+      },
     },
   },
 });

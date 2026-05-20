@@ -1,11 +1,18 @@
 {
   "name": "orak-util-solidjs",
-  "version": "0.0.12",
+  "version": "0.0.16",
   "description": "Oraksoft Solidjs Components",
   "type": "module",
   "main": "dist/orak-util-solidjs.cjs",
   "module": "dist/orak-util-solidjs.js",
   "types": "dist/orak-util-solidjs.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/orak-util-solidjs.js",
+      "require": "./dist/orak-util-solidjs.cjs"
+    },
+    "./style": "./dist/orak-util-solidjs.css"
+  },
   "files": [
     "dist"
   ],

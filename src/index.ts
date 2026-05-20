@@ -1,2 +1,3 @@
-export { ExampleButton } from "./ExampleButton";
+import "./index.css";
 
+export { ExampleButton } from "./ExampleButton";
