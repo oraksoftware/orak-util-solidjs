@@ -1,6 +1,6 @@
 {
   "name": "orak-util-solidjs",
-  "version": "0.0.1",
+  "version": "0.0.12",
   "description": "Oraksoft Solidjs Components",
   "type": "module",
   "main": "dist/orak-util-solidjs.cjs",
@@ -11,13 +11,16 @@
   ],
   "fiBuildComment": "Add new class to index.ts",
   "scripts": {
-    "dev": "tsup --watch",
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "dev": "vite build --watch",
+    "release": "release-it",
+    "publish": "pnpm build && pnpm release",
     "test": "vitest run",
     "test:watch": "vitest",
-    "build": "tsup",
     "pn-ins-osj": "pnpm install",
     "pn-publish": "pnpm publish --no-git-checks",
-    "pn-buipub": "tsup && pnpm publish --no-git-checks",
+    "pn-buipub": "vite build && pnpm publish --no-git-checks",
     "pn-link": "pnpm link",
     "pn-unlink": "pnpm unlink orak-util-solidjs",
     "list-global": "pnpm list -g"
@@ -37,15 +40,23 @@
   },
   "homepage": "https://github.com/engtuncay/orak-util-solidjs#readme",
   "devDependencies": {
-    "terser": "^5.39.0",
-    "tsup": "^8.3.0",
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/node": "^20.6.3",
+    "concurrently": "^8.2.1",
+    "release-it": "^16.1.5",
+    "tailwindcss": "^4.3.0",
     "typescript": "^5.2.2",
-    "vitest": "^2.1.2"
+    "vite": "^8.0.13",
+    "vite-plugin-dts": "^3.5.3",
+    "vite-plugin-solid": "^2.7.0"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.9.10"
   },
   "dependencies": {
-    
+    "solid-js": "^1.9.10"
   },
-  "devDependenciesComment": {
-    "solid-js": "^1.9.5"
+  "z_comment": {
+    "dev": "vite build --watch"
   }
 }
