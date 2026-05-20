@@ -27,10 +27,7 @@
     "test:watch": "vitest",
     "np-ins-osj": "pnpm install",
     "np-pub": "npm publish --no-git-checks",
-    "np-buipub": "vite build && pnpm publish --no-git-checks",
-    "np-link": "pnpm link",
-    "np-unlink": "pnpm unlink orak-util-solidjs",
-    "list-global": "pnpm list -g"
+    "np-buipub": "vite build && npm publish --no-git-checks"
   },
   "keywords": [
     "typescript",
