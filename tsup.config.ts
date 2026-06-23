@@ -2,7 +2,7 @@ import { defineConfig } from "tsup";
 
 export default defineConfig({
     entry: { "orak-util-solidjs": "src/index.ts" },
-    format: ["esm", "cjs"],
+    format: ["esm"],
     dts: true,
     minify: false,
     clean: true,

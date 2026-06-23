@@ -1,16 +1,12 @@
 {
   "name": "orak-util-solidjs",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Oraksoft Solidjs Components",
   "type": "module",
-  "main": "dist/orak-util-solidjs.cjs",
   "module": "dist/orak-util-solidjs.js",
   "types": "dist/orak-util-solidjs.d.ts",
   "exports": {
-    ".": {
-      "import": "./dist/orak-util-solidjs.js",
-      "require": "./dist/orak-util-solidjs.cjs"
-    },
+    ".": "./dist/orak-util-solidjs.js",
     "./style": "./dist/orak-util-solidjs.css"
   },
   "files": [
@@ -48,14 +44,14 @@
     "@types/node": "^20.6.3",
     "concurrently": "^8.2.1",
     "release-it": "^16.1.5",
-    "tailwindcss": "^4.3.0",
     "typescript": "^5.2.2",
     "vite": "^8.0.13",
     "vite-plugin-dts": "^3.5.3",
     "vite-plugin-solid": "^2.7.0"
   },
   "peerDependencies": {
-    "solid-js": "^1.9.10"
+    "solid-js": "^1.9.10",
+    "tailwindcss": ">=4.0"
   },
   "dependencies": {
     "solid-js": "^1.9.10"
